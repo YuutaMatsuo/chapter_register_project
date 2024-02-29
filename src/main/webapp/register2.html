@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>登録画面2</title>
+</head>
+<body>
+	<h2>登録情報を入力してください</h2>
+	
+	<!-- ここから入力フォームを定義 -->
+	<form action="/RegisterProject/register2.jsp" method="post">
+	<!-- テキストエリア -->
+	名前：<input type="text" name="name" size="10"><br>
+	<!-- パスワード -->
+	パスワード：<input type="password" name="pass" size="10"><br>
+	<!-- ラジオボタン 単一選択 name属性の値が同じものが１つの選択肢グループになる -->
+	年齢：<input type="radio" name="age" value="chiled">18歳未満
+		  <input type="radio" name="age" value="adult">18歳以上<br>
+	<!-- チェックボックス 複数選択可能 name属性の値が同じものが１つの選択肢グループになる  -->
+	開発経験：<input type="checkbox" name="lang" value="Java">Java
+			  <input type="checkbox" name="lang" value="PHP">PHP
+			  <input type="checkbox" name="lang" value="Ruby">Ruby
+			  <input type="checkbox" name="lang" value="Python">Python<br>
+	<!-- リストボックス -->
+	<!-- selectタグにsize指定をすると折りたたまれた状態で何個表示されるかを指定することが出来る -->
+	住所：<select name="address" size="1"> 
+			<option value="北海道">北海道</option>
+			<option value="東北">東北</option>
+			<option value="関東">関東</option>
+			<option value="中部">中部</option>
+			<option value="近畿">近畿</option>
+			<option value="中国">中国</option>
+			<option value="四国">四国</option>
+			<option value="九州・沖縄">九州・沖縄</option>
+			<option value="海外">海外</option>
+		  </select><br>
+	ご意見・お問い合わせ：<br>
+	<!-- テキストエリア -->
+	<textarea name="msg" rows="5" cols="50">ここに入力</textarea><br>
+	<!-- 送信 -->
+	<input type="submit" value="送信">
+	<!-- 取消 -->
+	<input type="reset" value="取消">
+	</form>
+</body>
+</html>

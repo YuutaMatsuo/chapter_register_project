@@ -56,7 +56,7 @@ public class RegisterServlet extends HttpServlet {
 		out.println("住所：<strong>" + request.getParameter("address") + "</strong><br>");
 		out.println("ご意見・お問い合わせ：<strong><br>" + request.getParameter("msg") + "</strong><br>");
 		out.println("（この画面はサーブレットで出力しています）<br>");
-		out.println("<input type=\"submit\" value=\"確認\"");
+		out.println("<input type=\"submit\" value=\"登録\"");
 		out.println("</body>");
 		out.println("</html>");
 	}
