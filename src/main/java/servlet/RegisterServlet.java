@@ -29,7 +29,7 @@ public class RegisterServlet extends HttpServlet {
 		out.println("<html>");
 		out.println("<head>");
 		out.println("<title>確認画面</title>");
-		out.println("</head");
+		out.println("</head>");
 		out.println("<body>");
 		out.println("<h2>入力情報を確認して登録ボタンを押してください</h2>");
 		out.println("名前：<strong>" + request.getParameter("name") + "</strong><br>");
